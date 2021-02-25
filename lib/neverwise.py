@@ -175,7 +175,8 @@ def createListItem(label, label2 = '', iconImage = None, thumbnailImage = None, 
     li.setIconImage(iconImage)
 
   if thumbnailImage:
-    li.setThumbnailImage(thumbnailImage)
+    #li.setThumbnailImage(thumbnailImage)
+    li.setArt({ 'thumb' : thumbnailImage})
 
   if path:
     li.setPath(path)
